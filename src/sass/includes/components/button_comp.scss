@@ -1,0 +1,217 @@
+// ===== Button CSS =====
+.button {
+	position: relative;
+	width: 200px;
+	height: 50px;
+	background-color: $dark-blue;
+	cursor: pointer;
+	font-size: 12px;
+	.button--title {
+		font-size: 18px;
+		font-weight: 300;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 50px;
+		margin: 0;
+		font-weight: bold;
+	}
+
+	&:hover {
+		background-color: $button-primaryLight-hover-color;
+	}
+
+	&:active {
+		background-color: $button-primaryLight-active-color;
+	}
+
+}
+
+
+// ===== Button Description =====
+.button_desc_container {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 10px;
+	pointer-events: none;
+	cursor: default;
+}
+
+// ===== Button Container =====
+.button--container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	// margin-left: auto;
+	// margin-right: auto;
+}
+
+
+// ===== Button Annotation =====
+.button__annotation-left-text{
+	position: absolute;
+	top: calc(50% - 8px);
+	right: 110%;
+	color: $button__annotation-color;
+	transition: all 250ms ease;
+	// opacity: 0;
+	pointer-events: none;
+}
+
+.button__annotation-left-line{
+	position: absolute;
+	top: 0;
+	right: 105%;
+	background: $button__annotation-color;
+	width: 1px;
+	height: 50px;
+	transition: all 250ms ease;
+	// transform: scaleY(0);
+	pointer-events: none;
+	
+	&:after {
+		content:'';
+		position: absolute;
+		width: 5px;
+		height: 1px;
+		left: -2px;
+		background-color: $button__annotation-color;
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		width: 5px;
+		height: 1px;
+		left: -2px;
+		bottom: 0;
+		background-color: $button__annotation-color;
+	}
+}
+
+.button__annotation-top-line {
+	position: absolute;
+	top: -10px;
+	background: $button__annotation-color;
+	width: 100%;
+	height: 1px;
+	transition: all 250ms ease;
+	pointer-events: none;
+	
+	&:after {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 0%;
+		top: -2px;
+		background-color: $button__annotation-color;
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 100%;
+		top: -2px;
+		bottom: 0;
+		background-color: $button__annotation-color;
+	}
+}
+
+.button__annotation-top-text{
+	position: absolute;
+	top: -35px;
+	right: 40%;
+	color: $button__annotation-color;
+	transition: all 250ms ease;
+	pointer-events: none;
+}
+
+
+.button__annotation-bottom-line {
+	position: absolute;
+	bottom: -10px;
+	left: 25%;
+	background: $button__annotation-color;
+	width: 100px;
+	height: 1px;
+	transition: all 250ms ease;
+	pointer-events: none;
+	
+	&:after {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 0%;
+		top: -2px;
+		background-color: $button__annotation-color;
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		width: 1px;
+		height: 5px;
+		left: 100%;
+		top: -2px;
+		bottom: 0;
+		background-color: $button__annotation-color;
+	}
+}
+
+.button__annotation-bottom-text{
+	position: absolute;
+	bottom: -35px;
+	right: 30%;
+	color: $button__annotation-color;
+	transition: all 250ms ease;
+	pointer-events: none;
+}
+
+// ====== Button Animation with Annotations =====
+
+.aos-animate {
+
+	.button__annotation-left-line.button--animated-scaleY {
+		animation: scaleY 1s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+		transform-origin: center center;
+		animation-delay: 1s;
+	}
+
+	.button__annotation-left-text.button--animated-left {
+		animation: left 1s cubic-bezier(0.42, 0, 0, 0.995), 
+								fade 0.5s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+		opacity: 0;
+		animation-delay: 1.5s;
+	}
+
+
+	.button__annotation-right-text.button--animated-right {
+		animation: right 1s cubic-bezier(0.42, 0, 0, 0.995), 
+								fade 0.5s cubic-bezier(0.42, 0, 0, 0.995) forwards;
+		opacity: 0;
+		animation-delay: 3s;
+	}
+
+	.button__annotation-right-line {
+
+		&.button--animated-scaleY {
+		  transform: scaleY(1) rotate(-45deg); 
+			transition-delay: 2.5s;
+		}
+	}
+
+	.button__annotation-right-circle {
+		&.button--animated-scale {
+			transform: scale(1); 
+			transition-delay: 2.5s;
+		}
+	}
+
+
+
+
+} // /.aos-animate
+
