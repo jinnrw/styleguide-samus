@@ -8,7 +8,6 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: 'Roboto', arial, sans-serif;
-  background-image: url(../img/costco/costco-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -111,84 +110,85 @@ body {
   } 
 
   #logo:hover {
-    background: $dark-blue;
+    background: $blue;
       font-size: 26px;
   }
 
   #colour:hover {
-    background: $yellow;
+    background: $green;
       font-size: 26px;
   }
 
   #buttons:hover {
-    background: #f2f2f2;
-    h2 {
-      color: $light-blue;
-    }
+    background: $orange;
   }
 
   #typography:hover {
-    background: $black;
-      font-size: 26px;
+    background: $gray;
+    font-size: 26px;
+    h2 {
+      color: $blue;
+    }
   }
 
   #iconography:hover {
-    background: $light-blue;
+    background: $blue-gray;
       font-size: 26px;
+      h2 {
+        color: $green;
+      }
   }
 
   #imagery:hover {
     background: $gray;
     h2 {
-      color: $yellow;
+      color: $red;
     }
   }
 
   #layout:hover {
-    background: $red;
+    background: $black;
   }
 
 
   #logo.active {
-    background: $dark-blue;
+    background: $blue;
     &:after {
-      background-color: $dark-blue;
+      background-color: $blue;
     }
   }
 
-#colour.active {
-  background: $yellow;
-}
-
-
   #colour.active {
-    background: $yellow;
+    background: $green;
     &:after {
-      background-color: $yellow;
+      background-color: $green;
     }
   }
 
   #buttons.active {
-    background: #f2f2f2;
+    background: $orange;
     &:after {
-      background-color: #f2f2f2;
-    }
-    h2 {
-      color: $light-blue;
+      background-color: $orange;
     }
   }
 
   #typography.active {
-    background: $black;
+    background: $gray;
+    h2 {
+      color: $blue;
+    }
     &:after {
-      background-color: $black;
+      background-color: $gray;
     }
   }
 
   #iconography.active {
-    background: $light-blue;
+    background: $blue-gray;
+    h2 {
+      color: $green;
+    }
     &:after {
-      background-color: $light-blue;
+      background-color: $blue-gray;
     }
   }
 
@@ -198,14 +198,14 @@ body {
       background-color: $gray;
     }
     h2 {
-      color: $yellow;
+      color: $red;
     }
   }
 
   #layout.active {
-    background: $red;
+    background: $black;
     &:after {
-      background-color: $red;
+      background-color: $black;
     }
   }
 

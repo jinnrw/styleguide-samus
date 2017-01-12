@@ -29,10 +29,13 @@
 .button_desc_container {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
 	font-size: 12px;
 	margin-top: 10px;
 	pointer-events: none;
 	cursor: default;
+	position: absolute;
+	left: 0;
 }
 
 // ===== Button Container =====
@@ -50,7 +53,7 @@
 .button__annotation-left-text{
 	position: absolute;
 	top: calc(50% - 8px);
-	right: 110%;
+	right: 117%;
 	color: $button__annotation-color;
 	transition: all 250ms ease;
 	// opacity: 0;
@@ -60,7 +63,7 @@
 .button__annotation-left-line{
 	position: absolute;
 	top: 0;
-	right: 105%;
+	right: 108%;
 	background: $button__annotation-color;
 	width: 1px;
 	height: 40px;
@@ -120,7 +123,7 @@
 
 .button__annotation-top-text{
 	position: absolute;
-	top: -35px;
+	top: -33px;
 	left: 0px;
 	color: $button__annotation-color;
 	transition: all 250ms ease;
