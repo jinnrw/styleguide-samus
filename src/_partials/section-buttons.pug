@@ -135,14 +135,16 @@
 
         section.button-content.button-stat#controls-primary-btns
           .row
-            h3 Primary Buttons
+            h3 Primary CTA
             .grid-25.grid-sm-100.button-description
-              p The primary blue call to action is used to indicate continuation to a subsequent page.
+              p The primary green CTA is used to indicate continuation to a subsequent page.
               h6 Specifications
               ul
-                li height: 50px;
-                li width: 200px;
-                li font-size: 18px;
+                li Height: 50px;
+                li Padding: 20px;
+                li Font Size: 16px;
+                li Font Weight: 700;
+                li Stroke: 1px;
 
             .grid-70.grid-sm-100.button-container
               .button-grid-layout
@@ -150,20 +152,18 @@
                   //- Button component here
                   include components/button_comp
                     block button-title
-                      h1.button--title Primary 
+                      h1.button--title Button 
                   
                     block button-annotation
-                      .button__annotation-top-text.button--animated-left 200px
+                      .button__annotation-top-text.button--animated-left 20px
                       .button__annotation-top-line.button--animated-scaleY
-                      .button__annotation-left-text.button--animated-left 50px
+                      .button__annotation-left-text.button--animated-left 40px
                       .button__annotation-left-line.button--animated-scaleY
-                      .button__annotation-bottom-line.button--animated-left
-                      .button__annotation-bottom-text.button--animated-scaleY centre aligned
 
             //- Focused Button 
           .row
             .grid-25.grid-sm-100.button-description
-              p The size of call to action will vary based on the length of the label.
+              p Length of CTA Varies on product title, please maintain padding proportions as displayed.
 
             .grid-70.grid-sm-100.button-container.focus-button-container
 
@@ -174,15 +174,39 @@
                       h1.button--title Primary 
                     block button-desc-container
                       .button_desc_container
-                        .button__desc Fill: #0060A8
+                        .button__desc Fill: #4CA90C
 
                 .button--container
                   include components/button_comp
                     block button-title
-                      h1.button--title Secondary
+                      h1.button--title Hover 
                     block button-desc-container
                       .button_desc_container
-                        .button__desc Border/Fill: #0060A8
+                        .button__desc Fill: #8CC764
+
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Disabled
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Border/Fill: #E6F3DD
+
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Primary
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Fill: #B2CFE5
+
+                .button--container
+                  include components/button_comp
+                    block button-title
+                      h1.button--title Hover
+                    block button-desc-container
+                      .button_desc_container
+                        .button__desc Fill: #B2CFE5
 
                 .button--container
                   include components/button_comp
@@ -192,21 +216,6 @@
                       .button_desc_container
                         .button__desc Fill: #B2CFE5
 
-            //- Disable Button 
-          .row
-            .grid-25.grid-sm-100.button-description
-              p The green “place order” call to action is mainly used to indicate the final step from the shopping cart.
-
-            .grid-70.grid-sm-100.button-container.disable-button-container
-
-              .button-grid-layout
-                .button--container
-                  include components/button_comp
-                    block button-title
-                      h1.button--title Place Your Order
-                    block button-desc-container
-                      .button_desc_container
-                        .button__desc Fill: #197B30
         hr
         //- other buttons
         section.button-content.marketing-buttons#controls-marketing-btns

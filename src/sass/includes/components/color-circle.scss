@@ -25,43 +25,91 @@
 
 
 // ===== Primary Colour 1 =====
-.primary-color__1 .circle {
-	background-color: #0060A8;	
+.primary-color__1 {
+	position: relative;
+	.circle {
+		background-color: #5D9EE6;	
+		line-height: 16;
+		position: absolute;
+		bottom: -58px;
+		left: 22px;
+			&:first-child {
+			background-color: #1977DE;
+			border-radius: 130px 130px 0 0;
+			height: 65px;
+			width: 130px;
+			position: absolute;
+			right: 48px;
+			top: -137px;
+			z-index: 1;
+			line-height: 6;
+		}
+	}
 }
 
 
 // ===== Primary Colour 2 =====
-.primary-color__2 .circle {
-	background-color: #FFFFFF;	
-	color: #434343;
-	border: solid 0.7px #979797;
-}
+.primary-color__2 {
+	position: relative;
+	.circle {
+		background-color: #80C153;
+		line-height: 16;
+		position: absolute;
+		bottom: -58px;
+		left: 22px;
+			&:first-child {
+			background-color: #4CA90C;
+			border-radius: 130px 130px 0 0;
+			height: 65px;
+			width: 130px;
+			position: absolute;
+			right: 48px;
+			top: -137px;
+			z-index: 1;
+			line-height: 6;
+		}
+	}
+} 
 
 // ===== Primary Colour 3 =====
-.primary-color__3 .circle {
-	background-color: #F69D38;	
+.primary-color__3 {
+	.circle {
+		background-color: #EC7202;	
+	}
 }
-
-// ===== Primary Colour 4 =====
-.primary-color__4 .circle {
-	background-color: #197B30;	
-}
-
-
 
 // ===== secondary Colour 1 =====
-.secondary-color__1 .circle {
-	background-color: #007BDA;	
-}
+.secondary-color__1 {
+	position: relative;
+	.circle {
+		background-color: #797979;	
+		line-height: 16;
+		position: absolute;
+		bottom: -58px;
+		left: 22px;
+			&:first-child {
+			background-color: #424242;
+			border-radius: 130px 130px 0 0;
+			height: 65px;
+			width: 130px;
+			position: absolute;
+			right: 48px;
+			top: -137px;
+			z-index: 1;
+			line-height: 6;
+		}
+	}
+} 
 
 // ===== secondary Colour 2 =====
 .secondary-color__2 .circle {
-	background-color: #E0393E;	
+	background-color: #ED0339;	
 }
 
 // ===== secondary Colour 3 =====
 .secondary-color__3 .circle {
-	background-color: #444444;	
+	background-color: #F6F6F6;	
+	color: #434343;
 }
 
 // ===== Backgorund Colour =====
@@ -72,7 +120,7 @@
 }
 
 .background-color__2 .circle {
-  background-color: #EDEDED;
+  background-color: #EEF6FC;
 	color: #434343;
 
 }

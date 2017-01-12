@@ -1,28 +1,25 @@
 // ===== Button CSS =====
 .button {
 	position: relative;
-	width: 200px;
-	height: 50px;
-	background-color: $dark-blue;
+	height: 40px;
+	padding: 0 20px;
+	background-color: $green;
 	cursor: pointer;
 	font-size: 12px;
+	border-radius: 2px;
 	.button--title {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 300;
 		color: #fff;
 		text-align: center;
-		text-transform: uppercase;
-		line-height: 50px;
+		line-height: 40px;
+		letter-spacing: 1px;
 		margin: 0;
 		font-weight: bold;
 	}
 
 	&:hover {
 		background-color: $button-primaryLight-hover-color;
-	}
-
-	&:active {
-		background-color: $button-primaryLight-active-color;
 	}
 
 }
@@ -66,7 +63,7 @@
 	right: 105%;
 	background: $button__annotation-color;
 	width: 1px;
-	height: 50px;
+	height: 40px;
 	transition: all 250ms ease;
 	// transform: scaleY(0);
 	pointer-events: none;
@@ -93,8 +90,9 @@
 .button__annotation-top-line {
 	position: absolute;
 	top: -10px;
+	left: 1px;
 	background: $button__annotation-color;
-	width: 100%;
+	width: 20px;
 	height: 1px;
 	transition: all 250ms ease;
 	pointer-events: none;
@@ -123,7 +121,7 @@
 .button__annotation-top-text{
 	position: absolute;
 	top: -35px;
-	right: 40%;
+	left: 0px;
 	color: $button__annotation-color;
 	transition: all 250ms ease;
 	pointer-events: none;

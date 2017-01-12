@@ -93,24 +93,47 @@
 	.button-grid-layout {
 		.button--container:nth-child(2) {
 			.button {
-				background-color: transparent;
-				border: 1px solid $dark-blue;
-				h1 {
-					color: $dark-blue;
-				}
+				background-color: $button-primaryLight-hover-color;
 			}
 		}
 
 		.button--container:nth-child(3) {
 			.button {
-				background-color: $dark-blue;
+				background-color: $button-primaryLight-disabled;
 				opacity: .5;
 			}
 		}
 
 		.button--container:nth-child(4) {
 			.button {
-				background-color: $green;
+				background-color: transparent;
+				border: 1px solid $green;
+				h1 {
+					color: $green;
+				}
+			}
+		}
+
+		.button--container:nth-child(5) {
+			.button {
+				background-color: rgba(75, 169, 11, 0.2);
+				border: 1px solid $green;
+				opacity: .9;
+				h1 {
+					color: $green;
+					opacity: 1;
+				}
+			}
+		}
+
+		.button--container:nth-child(6) {
+			.button {
+				background-color: transparent;
+				border: 1px solid $green;
+				opacity: .7;
+				h1 {
+					color: $green;
+				}
 			}
 		}
 		
