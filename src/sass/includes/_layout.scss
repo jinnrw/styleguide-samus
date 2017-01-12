@@ -37,6 +37,9 @@
 
 
 //- Layout Component (background and Container)
+.maingrid{
+	padding-left:10%;
+}
 
 .layout-background {
 	background-color: #ededed;
@@ -45,13 +48,22 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 	margin: auto;
+}
+.layout-gridin{
+	background: #ededed;
+	padding: 10px; 
+}
+
+.wmargin{
+	margin-bottom: 20px;
 }
 
 .layout-container {
-	margin: 10px;
+	padding: 10px;
 	background-color: #d6d6d6;
+	border: 1px solid #ededed;
 	color: #434343;
 	font-size: 12px;
 	height: 100%;
@@ -134,7 +146,6 @@
 .layout_desktop {
 
 	.layout-background {
-		padding-top: 150px;
 		flex-wrap: wrap;
 	}
 
@@ -173,36 +184,7 @@
   	  justify-content: center;
 		}
 	}
-
-	.layout-annotation {
-		top: 120px;
-	}
 }
-
-.layout_mobile {
-
-	.layout-background {
-		padding-top: 110px;
-		width: 60%;
-    margin: auto;
-	}
-}
-
-.layout_tablet {
-
-	.layout-background {
-		padding-top: 110px;
-		width: 80%;
-    margin: auto;
-	}
-}
-
-
-
-
-
-
-
 
 
 
