@@ -412,6 +412,12 @@
 	}
 }
 
+.tabs, .breadcrumbs, .radio-buttons, .checkbox, .theme-selection {
+	.row {
+		margin-left: 10%;
+	}
+}
+
 .marketing-buttons {
 	.button .button--title {
 		font-weight: lighter;
