@@ -226,9 +226,48 @@
         //-             button Upload Photos
         //- hr
 
+        //- Tabs and Breadcrumbs
+
+        section.button-content
+          .row
+            .grid-25.grid-sm-100.button-description
+                h3 Tabs
+                p This element is used in the product preview page to change the view of the product image.
+            .grid-70.grid-sm-100.button-container.tabs
+              .row
+                ul
+                  li.tab-selected Front
+                  li Back
+                p Default
+              .row
+                ul
+                  li.tab-selected Front
+                  li.tab-selected Back
+                p Hover
+          .row
+            .grid-25.grid-sm-100.button-description
+                h3 Breadcrumbs
+                p Breadcrumbs are displayed below the header banner and above the rest of the page content.
+            .grid-70.grid-sm-100.button-container.breadcrumbs
+              .row
+                ul
+                  li Grocery
+                  li Fresh Food
+                  li Produce
+                  li Fresh Fruit
+                p Default
+              .row
+                ul
+                  li Grocery
+                  li.tab-selected Fresh Food
+                  li Produce
+                  li Fresh Fruit
+                p Hover
+
+        hr
         //- Radio Buttons, Check Boxes
 
-        section.button-content.marketing-buttons#controls-marketing-btns
+        section.button-content.marketing-buttons
           .row
             .grid-25.grid-sm-100.button-description
                 h3 Radio Buttons
@@ -256,12 +295,19 @@
           .row
             .grid-25.grid-sm-100.button-description
               h3 Theme Selection
-              p Costco’s primary color is used to display the active selection.
+              p Color themes are displayed in blocks referencing a theme’s primary color.
               h6 Border Specifications
               ul
                 li active selection – border: 3px solid #d9d9d9;
 
             .grid-70.grid-sm-100.button-container
+              h5 Color Themes
+              .row
+                .color-1 
+                  p Active
+                .color-2
+                  p  Default
+                .color-3
         //- hr
         //- section.button-content.hero-section#controls-hero
         //-   h3 Homepage Hero Slider
