@@ -39,7 +39,6 @@
 .button-content {
 	max-width: 1020px;
 	margin: 0 auto;
-	// overflow: auto;
 	overflow: hidden;
 	position: relative;
 
@@ -50,6 +49,13 @@
 		flex-wrap: wrap;
 		margin-left: 5%;
     	margin-top: 2%;
+		.row {
+			margin-bottom: 50px;
+		}
+		span, h4 {
+			float: left;
+			letter-spacing: normal;
+		}
 	}
 }
 .button-description {
@@ -425,26 +431,56 @@
 			font-size: 12px;
 		}
 		.radio-button {
-			&:last-of-type {
-				margin-left: 10%;
-			}
 			&:before {
 				display: inline-block;
 				content: '';
 				width: 1em;
 				height: 1em;
-				margin-right: 0.75em;
+				margin-right: 20px;
 				border-radius: 1em;
 				border: 2px solid #fff;
 				vertical-align: -0.15em;
 				box-shadow: 0 0 0 1px #333;
 			}
 			&.radio-active:before {
-				box-shadow: 0 0 0 1px #0060a8;
-				background-color: #0060a8;
+				box-shadow: 0 0 0 1px $blue;
+				background-color: $blue;
 			}
 		}
 	}
+}
+.checkbox {
+	span {
+		height: 23px;
+		width: 23px;
+		border: 1px solid $black;
+		border-radius: 2px;
+		margin-right: 20px;
+		line-height: 6.5;
+		font-size: 12px;
+		&.checkbox-active {
+			border: 1px solid $blue;
+			background-color: $blue;
+			&:after {
+				content: '';
+				height: 8px;
+				width: 15px;
+				border-left: 3px solid #FFF;
+				border-bottom: 3px solid #FFF;
+				display: block;
+				position: absolute;
+				top: 6px;
+				left: 4px;
+				transform: rotate(-43deg);
+			}
+		}
+	}
+	h4 {
+		margin: 0;
+	}
+}
+.active-text {
+	color: $blue;
 }
 
 .upload-buttons {

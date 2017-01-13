@@ -171,6 +171,53 @@
 	pointer-events: none;
 }
 
+.button__annotation-right-text {
+	position: absolute;
+	right: -125px;
+	top: 12px;
+	color: $button__annotation-color;
+}
+
+.button__annotation-top-right-circle, .button__annotation-bottom-right-circle {
+	height: 15px;
+	width: 15px;
+	border: 1px solid $button__annotation-color;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.button__annotation-top-right-circle {
+	right: -6px;
+	top: -6px;
+	&:after {
+		content: '';
+		height: 1px;
+		width: 17px;
+		background-color: #bebebe;
+		display: block;
+		position: absolute;
+		right: -14px;
+		top: 16px;
+		transform: rotate(40deg);
+	}
+}
+
+.button__annotation-bottom-right-circle {
+	right: -6px;
+	bottom: -6px;
+	&:after {
+		content: '';
+		height: 1px;
+		width: 17px;
+		background-color: #bebebe;
+		display: block;
+		position: absolute;
+		right: -14px;
+		bottom: 16px;
+		transform: rotate(-40deg);
+	}
+}
+
 // ====== Button Animation with Annotations =====
 
 .aos-animate {

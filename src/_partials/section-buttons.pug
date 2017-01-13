@@ -33,10 +33,14 @@
                       h1.button--title Button 
                   
                     block button-annotation
-                      .button__annotation-top-text.button--animated-left 20px
-                      .button__annotation-top-line.button--animated-scaleY
-                      .button__annotation-left-text.button--animated-left 40px
-                      .button__annotation-left-line.button--animated-scaleY
+                      .button__annotation-top-text 20px
+                      .button__annotation-top-line
+                      .button__annotation-left-text 40px
+                      .button__annotation-left-line
+                      .button__annotation-top-right-circle
+                      .button__annotation-bottom-right-circle
+                      .button__annotation-right-text 2px Radius Corners
+                      
 
             //- Focused Button 
           .row
@@ -187,201 +191,160 @@
                       li Sports Gallery
               p Large Dropdown
         hr
-        section.button-content.nav-bar#controls-refresh
-          h3 Navigation Bar Refresh
-          .grid-25.grid-sm-100.button-description
-            p A new main navigation menu design based on the one used on Costco.com.
-          .grid-70.grid-sm-100.button-container
-            .nav-container.refresh
-              nav
-                .top-menu
-                  p
-                    span My Warehouse:
-                    |  Camel Mountain, CA |
-                    span  Change
-                  ul
-                    li Help &nbsp;&nbsp;|
-                    li Contact Us &nbsp;&nbsp;|
-                    li Back to Costco.com &nbsp;&nbsp;|
-                    li Help
-                img.logo(src='img/costco/costco-logo.png', alt='')
-                ul.sign-in
-                  li Sign in / Register
-                  li
-                    div.cart
-                ul.refresh-menu
-                  li My Photos
-                  li My Projects
-                  li Photo Books
-                  li Canvas Prints
-                  li Metal Prints
-                  li Greeting Cards
-                  li Wall Decor
-                  li Photo Gifts
-                  li
-                    button Upload Photos
-        hr
-        //- other buttons
+        //- section.button-content.nav-bar#controls-refresh
+        //-   h3 Navigation Bar Refresh
+        //-   .grid-25.grid-sm-100.button-description
+        //-     p A new main navigation menu design based on the one used on Costco.com.
+        //-   .grid-70.grid-sm-100.button-container
+        //-     .nav-container.refresh
+        //-       nav
+        //-         .top-menu
+        //-           p
+        //-             span My Warehouse:
+        //-             |  Camel Mountain, CA |
+        //-             span  Change
+        //-           ul
+        //-             li Help &nbsp;&nbsp;|
+        //-             li Contact Us &nbsp;&nbsp;|
+        //-             li Back to Costco.com &nbsp;&nbsp;|
+        //-             li Help
+        //-         img.logo(src='img/costco/costco-logo.png', alt='')
+        //-         ul.sign-in
+        //-           li Sign in / Register
+        //-           li
+        //-             div.cart
+        //-         ul.refresh-menu
+        //-           li My Photos
+        //-           li My Projects
+        //-           li Photo Books
+        //-           li Canvas Prints
+        //-           li Metal Prints
+        //-           li Greeting Cards
+        //-           li Wall Decor
+        //-           li Photo Gifts
+        //-           li
+        //-             button Upload Photos
+        //- hr
+
+        //- Radio Buttons, Check Boxes
+
         section.button-content.marketing-buttons#controls-marketing-btns
-          h3 Marketing Banner Buttons
           .row
             .grid-25.grid-sm-100.button-description
-                h6 Specifications
-                ul
-                  li background-color: #0060A8;
-                  li font-size: 16px;
-                  li height: 50px;
-                  li padding: 30px 10px;
-            .grid-70.grid-sm-100.button-container
-                .button-grid-layout
-                  .button--container
-                    include components/button_comp
-                      block button-title
-                        h1.button--title Shop Product
-
-                        block button-annotation
-                          .button__annotation-top-text.button--animated-left 10px
-                          .button__annotation-top-line.button--animated-scaleY
-                          .button__annotation-left-text.button--animated-left 50px
-                          .button__annotation-left-line.button--animated-scaleY
-                          .button__annotation-bottom-text-left.button--animated-scaleY 30px
-                          .button__annotation-bottom-text-right.button--animated-scaleY 30px
-
-
-                  .button--container
-                    include components/button_comp
-                      block button-title
-                        h1.button--title Shop Product
-                      block button-desc-container
-                        .button_desc_container
-                          .button__desc Fill: #0060A8
+                h3 Radio Buttons
+                p Sam’s Club’s primary color is used to display the active selection.
+            .grid-70.grid-sm-100.button-container.radio-buttons
+              .row
+                span.radio-button
+                h4.button--title Material Finish
+                p Default
+              .row
+                span.radio-button.radio-active
+                h4.button--title.active-text Material Finish
+                p Active
           .row
-            h3 Upload buttons
             .grid-25.grid-sm-100.button-description
-                p The upload photos button is primarily used in the navigation bar.
-                h6 Specifications
-                ul
-                  li background-color: #007BDA;
-                  li font-size: 10px;
-                  li height: 20px;
-                  li padding: 10px;
-            .grid-70.grid-sm-100.button-container.upload-buttons
-                .button-grid-layout
-                  .button--container
-                    include components/button_comp
-                      block button-title
-                        h1.button--title Upload Photos 
-                        block button-annotation
-                          .button__annotation-top-text.button--animated-left 10px
-                          .button__annotation-top-line.button--animated-scaleY
-                          .button__annotation-left-text.button--animated-left 20px
-                          .button__annotation-left-line.button--animated-scaleY
-                          .button__annotation-bottom-text-left.button--animated-scaleY 10px
-                          .button__annotation-bottom-text-right.button--animated-scaleY 10px
-
-                      block button-desc-container
-                        .button_desc_container
-                  .button--container
-                    include components/button_comp
-                      block button-title
-                        h1.button--title Upload Photos 
-                      block button-desc-container
-                        .button_desc_container
-                          .button__desc Fill: #007BDA
+                h3 Check Boxes
+                p Sam’s Club’s primary color is used to display the active selection.
+            .grid-70.grid-sm-100.button-container.checkbox
+              .row
+                  span Default
+                  h4.button--title Theme Selection
+              .row
+                  span.checkbox-active Active
+                  h4.button--title.active-text Theme Selection
           .row
-            h3 Radio Buttons
             .grid-25.grid-sm-100.button-description
+              h3 Theme Selection
               p Costco’s primary color is used to display the active selection.
-            .grid-70.grid-sm-100.button-container
-                .button-grid-layout.radio-buttons
-                  span.radio-button.radio-active
-                  h4.button--title Horizontal
-                  p Selection Made
-                  span.radio-button
-                  h4.button--title Vertical
-        hr
-        section.button-content.hero-section#controls-hero
-          h3 Homepage Hero Slider
-          .row
-            .grid-25.grid-sm-100.button-description
-                p The main hero slider on the homepage is controlled by left and right arrows on either ends of the image.  
-                  br 
-                  br 
-                  | The numbered controls on the bottom of the banner provides as an alternate way to cycle through the banners as well as indicate which one is being viewed.
-            .grid-70.grid-sm-100.button-container
-              .slider
-                .top-line
-                p.top-text 2000px
-                .left-line
-                p.left-text 630px
-
-                .left-arrow
-                .right-arrow
-
-                ul
-                  li 1
-                  li.selected 2
-                  li 3
-                  li 4
-                  li 5
-                  li 6
-                  li
-          .row
-            .grid-25.grid-sm-100.button-description
-                h3 Product Thumbs
-                p This element is used in the product details page to navigate through the preview images of a product.  
-            .grid-70.grid-sm-100.button-container.product-thumbs
-              span.prev
+              h6 Border Specifications
               ul
-                li.current
-                li
-                  .top-text
-                    p 67px
-                  .top-line
-                li
-                li
-              span.next
-        hr
-        section.button-content.tiles-section#controls-tiles
-          .row
-            .grid-25.grid-sm-100.button-description
-                h3 Product Selection
-                p These tiles are mainly used in SKU pages to select from different types of products. 
-                  br 
-                  br 
-                  | Four-item selections are laid out at 2x2. Default tile layout will display three items per row.
-            .grid-50.grid-sm-100.button-container
-              .tile
-                .top-text
-                  p 202px
-                .top-line
-                .left-text
-                  p 221px
-                .left-line
-                h5 15oz. Photo Mugs
-              .tile
-                h5 11oz. Photo Mugs
-              .tile
-                h5 15oz. Collage Photo Mugs
-              .tile
-                h5 15oz. Collage Photo Mugs
-          .row.tile-states
-            .grid-25.grid-sm-100.button-description
-                h3 Tile States
-                h6 Border Specifications
-                ul
-                  li active selection – border: 3px solid #0060A9;
-                  li on-hover – border: 3px solid #64c8ff;
-                  li default – border: 1px solid #b2b2b2;
+                li active selection – border: 3px solid #d9d9d9;
+
             .grid-70.grid-sm-100.button-container
-              .tile
-                h5 Premium Layflat
-                p Active Selection
-              .tile
-                h5 Custom Photo Cover
-                p On-hover
-              .tile
-                h5 Padded Leather Cover
-                p Default View
+        //- hr
+        //- section.button-content.hero-section#controls-hero
+        //-   h3 Homepage Hero Slider
+        //-   .row
+        //-     .grid-25.grid-sm-100.button-description
+        //-         p The main hero slider on the homepage is controlled by left and right arrows on either ends of the image.  
+        //-           br 
+        //-           br 
+        //-           | The numbered controls on the bottom of the banner provides as an alternate way to cycle through the banners as well as indicate which one is being viewed.
+        //-     .grid-70.grid-sm-100.button-container
+        //-       .slider
+        //-         .top-line
+        //-         p.top-text 2000px
+        //-         .left-line
+        //-         p.left-text 630px
+
+        //-         .left-arrow
+        //-         .right-arrow
+
+        //-         ul
+        //-           li 1
+        //-           li.selected 2
+        //-           li 3
+        //-           li 4
+        //-           li 5
+        //-           li 6
+        //-           li
+        //-   .row
+        //-     .grid-25.grid-sm-100.button-description
+        //-         h3 Product Thumbs
+        //-         p This element is used in the product details page to navigate through the preview images of a product.  
+        //-     .grid-70.grid-sm-100.button-container.product-thumbs
+        //-       span.prev
+        //-       ul
+        //-         li.current
+        //-         li
+        //-           .top-text
+        //-             p 67px
+        //-           .top-line
+        //-         li
+        //-         li
+        //-       span.next
+        //- hr
+        //- section.button-content.tiles-section#controls-tiles
+        //-   .row
+        //-     .grid-25.grid-sm-100.button-description
+        //-         h3 Product Selection
+        //-         p These tiles are mainly used in SKU pages to select from different types of products. 
+        //-           br 
+        //-           br 
+        //-           | Four-item selections are laid out at 2x2. Default tile layout will display three items per row.
+        //-     .grid-50.grid-sm-100.button-container
+        //-       .tile
+        //-         .top-text
+        //-           p 202px
+        //-         .top-line
+        //-         .left-text
+        //-           p 221px
+        //-         .left-line
+        //-         h5 15oz. Photo Mugs
+        //-       .tile
+        //-         h5 11oz. Photo Mugs
+        //-       .tile
+        //-         h5 15oz. Collage Photo Mugs
+        //-       .tile
+        //-         h5 15oz. Collage Photo Mugs
+        //-   .row.tile-states
+        //-     .grid-25.grid-sm-100.button-description
+        //-         h3 Tile States
+        //-         h6 Border Specifications
+        //-         ul
+        //-           li active selection – border: 3px solid #0060A9;
+        //-           li on-hover – border: 3px solid #64c8ff;
+        //-           li default – border: 1px solid #b2b2b2;
+        //-     .grid-70.grid-sm-100.button-container
+        //-       .tile
+        //-         h5 Premium Layflat
+        //-         p Active Selection
+        //-       .tile
+        //-         h5 Custom Photo Cover
+        //-         p On-hover
+        //-       .tile
+        //-         h5 Padded Leather Cover
+        //-         p Default View
 
       .section-next
