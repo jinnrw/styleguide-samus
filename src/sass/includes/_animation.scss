@@ -138,6 +138,19 @@
   }
 }
 
+@keyframes slide-right {
+  0% {
+	    transform: translateX(-100vw);
+  }
+  
+  30% {
+    transform: translateX(-100vw);
+  }
+  
+  100% {
+    transform: translateX(0vw);
+  }
+}
 
 
 //      SCROLL DOWN ICON      //
