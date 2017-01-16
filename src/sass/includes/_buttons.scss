@@ -5,6 +5,7 @@
 	.content {
 		width: 100%;
 		height: 100%;
+		padding: 0 4%;
 	}
 
 	// ===== Section - Button - Article =====
@@ -164,117 +165,658 @@
 }
 
 // Costco
-.nav-container:first-of-type nav {
-	border-bottom: none;
-}
-.nav-bar nav {
-	border-bottom: 1px solid #f2f2f2;
-	padding-bottom: 8px;
-	&:after {
-		content: '';
-		width: 100%;
-		height: 1px;
-		background:#f2f2f2;
+// .nav-container:first-of-type nav {
+// 	border-bottom: none;
+// }
+
+// .nav-bar nav {
+// 	border-bottom: 1px solid #f2f2f2;
+// 	padding-bottom: 8px;
+// 	&:after {
+// 		content: '';
+// 		width: 100%;
+// 		height: 1px;
+// 		background:#f2f2f2;
+// 	}
+// 	ul {
+// 		margin: 0;
+// 		padding-left: 0;
+// 		display: flex;
+// 		justify-content: space-around;
+// 		align-items: center;
+// 		align-content: center;
+// 		position: relative;
+// 		&.full-nav:after {
+// 			content: '';
+// 			width: 100%;
+// 			height: 1px;
+// 			background-color: #f2f2f2;
+// 			position: absolute;
+// 			bottom: 6px;
+// 		}
+// 		li {
+// 			float: left;
+// 			list-style-type: none;
+// 			color: #007bda;
+// 			font-weight: bold;
+// 			margin: 0 5px;
+// 			font-size: 8px;
+// 			cursor: pointer;
+// 			z-index: 2;
+// 			button {
+// 				background-color: #007bda;
+// 				color: #FFF;
+// 				border: none;
+// 				padding: 5px;
+// 				font-size: 8px;
+// 				margin-right: 15px;
+// 				padding-left: 15px;
+// 				cursor: pointer;
+// 			}
+// 			&.menu-active {
+// 				background-color: $dark-blue;
+// 				color: #FFF;
+// 				padding: 2px 5px;
+// 				position: relative;
+// 				cursor: auto;
+// 			}
+// 			.sub-menu {
+// 				flex-direction: column;
+// 				align-items: flex-start;
+// 				background-color: $gray;
+// 				position: absolute;
+// 				left: -1px;
+// 				top: 17px;
+// 				min-width: 110px;
+// 				padding: 3px 10px;
+// 				box-shadow: 0 0 5px rgba(0,0,0,.2);
+// 				&.large-dropdown {
+// 					width: 350px;
+// 					column-count: 3;
+// 					left: -150px;
+// 					display: block;
+// 				}
+// 				li {
+// 					padding: 1px 0;
+// 					font-weight: lighter;
+// 				}
+// 			}
+// 			.cart {
+// 				width: 40px;
+// 				height: 40px;
+// 				border-radius: 50px;
+// 				background-color: #f69d38;
+// 				background-image: url('../img/costco/cart.png');
+// 				background-size: 42%;
+// 				background-repeat: no-repeat;
+// 				background-position: 12px 12px;
+// 				&:after {
+// 					content: '0';
+//     				padding: 5px 8px;
+// 					border-radius: 50%;
+// 					background: #FFF;
+// 					border: 2px solid #007bda;
+// 					position: relative;
+// 					top: -2px;
+// 					right: 9px;
+// 				}
+// 			}
+// 			.logo {
+// 				max-height: 40px;
+// 				position: relative;
+// 				top: -5px;
+// 			}
+// 		}
+// 	}
+// }
+
+
+//  ===== Controls 3.2 =====
+//  ===== 3.2.1 Main Navigation Bar =====
+
+.dropdown-menus .nav-container {
+	margin-bottom: 150px;
+	min-height: 100px;
+
+	a {
+		cursor: pointer;
 	}
-	ul {
+
+	.row {
 		margin: 0;
-		padding-left: 0;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
-		position: relative;
-		&.full-nav:after {
-			content: '';
-			width: 100%;
-			height: 1px;
-			background-color: #f2f2f2;
-			position: absolute;
-			bottom: 6px;
+	}
+	
+	.row.logo {
+		height: 85px;
+		line-height: 85px;
+
+		img {
+			vertical-align: middle;
 		}
-		li {
-			float: left;
-			list-style-type: none;
-			color: #007bda;
-			font-weight: bold;
-			margin: 0 5px;
-			font-size: 8px;
-			cursor: pointer;
-			z-index: 2;
-			button {
-				background-color: #007bda;
-				color: #FFF;
-				border: none;
-				padding: 5px;
-				font-size: 8px;
-				margin-right: 15px;
-				padding-left: 15px;
-				cursor: pointer;
-			}
-			&.menu-active {
-				background-color: $dark-blue;
-				color: #FFF;
-				padding: 2px 5px;
-				position: relative;
-				cursor: auto;
-			}
-			.sub-menu {
-				flex-direction: column;
-				align-items: flex-start;
-				background-color: $gray;
+	}
+
+  .external-links {
+		a {
+			color: #1977d3;
+			font-size: 12px;
+			padding: 0 5px;
+		}
+
+		.grid-80 {
+			text-align: right;
+		}
+	}
+}
+
+.dropdown-menus-desc {
+	margin-bottom: 50px;
+}
+
+.nav-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	&:before {
+		content: '';
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background-color: #d9d9d9;
+		bottom: -6px;
+    display: block;
+    left: 0;
+	}
+}
+
+.nav-links {
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+
+	.shop-all > a {
+		font-weight: bold;
+	}
+}
+
+.nav-search {
+	width: 40%;
+	height: 40px;
+	padding: 0 15px;
+
+	.search-box {
+		position: relative;
+		width: 100%;
+		border-radius: 20px;
+    border: solid 1px rgba(65,65,65,.2);
+    outline: none;
+		height: 40px;
+	}
+
+	.text-search-input {
+		padding: 0 20px;
+		border: 0;
+		width: 90%;
+		height: 100%;
+		outline: none;
+		border: none;
+		background: transparent;
+	}
+
+	.search-btn {
+		position: absolute;
+    right: 4px;
+    top: 2px;
+    outline: none;
+    color: inherit;
+    content: '';
+    width: 34px;
+    height: 34px;
+    background-image: url(/img/samus/magnifier-white.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center 7px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+		border: none;
+	}
+}
+
+// Nav User
+.nav-user {
+	width: 25%;
+
+	.account, .order {
+		display: block;
+		height: 45px;
+	}
+
+	.order {
+		padding-left: 10px;
+	}
+
+	p {
+		letter-spacing: 0.05rem;
+		font-size: 14px;
+		color: #666;
+		margin: 0;
+	}
+
+	.account {
+
+		.sign-in {
+			color: #1977d3;
+  	  font-weight: bold;
+			padding-top: .25em;
+
+			&:after {
+				color: inherit;
+				content: '';
+				width: 20px;
+				height: 45px;
 				position: absolute;
-				left: -1px;
-				top: 17px;
-				min-width: 110px;
-				padding: 3px 10px;
-				box-shadow: 0 0 5px rgba(0,0,0,.2);
-				&.large-dropdown {
-					width: 350px;
-					column-count: 3;
-					left: -150px;
-					display: block;
-				}
-				li {
-					padding: 1px 0;
-					font-weight: lighter;
-				}
-			}
-			.cart {
-				width: 40px;
-				height: 40px;
-				border-radius: 50px;
-				background-color: #f69d38;
-				background-image: url('../img/costco/cart.png');
-				background-size: 42%;
+				top: 0;
+				right: 8%;
+				background-image: url(/img/samus/homepage_icons.svg);
 				background-repeat: no-repeat;
-				background-position: 12px 12px;
-				&:after {
-					content: '0';
-    				padding: 5px 8px;
-					border-radius: 50%;
-					background: #FFF;
-					border: 2px solid #007bda;
-					position: relative;
-					top: -2px;
-					right: 9px;
-				}
+				background-size: 80px;
+				background-position: -47px 0;
+				margin-left: 5px;
 			}
-			.logo {
-				max-height: 40px;
-				position: relative;
-				top: -5px;
+		}
+	}
+
+	.flyout-wrapper {
+		width: 100%;
+	}
+
+	.dropdown .sub-menu {
+		min-width: auto;
+	}
+}
+
+.cart-icon {
+	width: 45px;
+	height: 45px;
+	display: block;
+	padding-left: 15px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 1.9rem;
+	line-height: 2.1;
+	background-image: url(/img/samus//trolley-1.svg);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 13px 5px;
+}
+
+.cart-icon-count-container {
+	width: 18px;
+	height: 18px;
+	color: #c6c6c6;
+	cursor: pointer;
+	display: block;
+	float: left;
+	text-align: center;
+	background: #4ca90c none repeat scroll 0% 0%/auto padding-box border-box;
+	border: 2px solid #4ca90c;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 9%;
+	left: 36%;
+	line-height: 40px;
+}
+
+.cart-icon-count {
+	top: -18px;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	letter-spacing: normal;
+	font-size: .9rem;
+	font-weight: bold;
+	position: relative;
+}
+
+.nav-container-title {
+	font-size: 18px;
+	color: #434343;
+	margin-top: 20px;
+}
+
+//  ===== 3.2.2 Large Dropdown =====
+
+.large-dropdown {
+	height: 500px;
+
+	.shop-all > a {
+		color: #0092db;
+	}
+
+	.nav-container-title {
+		margin-top: 460px;
+	}
+}
+
+.flyout-wrapper {
+	top: 50px;
+	padding: 0 20px 0;
+	background-color: #fff;
+	position: absolute;
+	border: 1px solid #e7e7e7;
+	border-radius: 2px;
+	max-height: 1000px;
+	box-shadow: 0 1px 2px 0 rgba(18,18,18,.08), 0 3px 6px 0 rgba(18,18,18,.06);
+
+	&:before, &:after {
+		width: 0;
+		height: 0;
+		content: '';
+		display: block;
+		position: absolute;
+		top: -8px;
+	}
+
+	&:before {
+		border-left: 9px solid transparent;
+		border-right: 9px solid transparent;
+		border-bottom: 9px solid #e7e7e7;
+		top: -9px;
+		margin-left: -1px;
+	}
+
+	&:after {
+		border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+	}
+}
+
+.dropdown {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	.sub-menu {
+    padding: 0 1%;
+    min-width: 150px;
+    margin-bottom: 30px;
+
+		.title {
+			font-size: .95rem;
+			font-weight: bold;
+			padding-left: 0;
+			min-height: 30px;
+			margin-bottom: 0;
+		}
+
+		li {
+			font-size: 14px;
+			padding: .5em 0 0 .5em;
+			line-height: 1.25rem;
+		}
+
+		a {
+			font-size: 13px;
+			color: #666;
+			line-height: 1;
+
+			&:hover {
+				color: #1977d3;
+			}
+		}
+	}
+
+	.no-title {
+		padding-top: 30px;
+	}
+}
+
+//  ===== 3.2.3 Dropdown with Uneven Columns =====
+
+.dropdown-menus .uneven-columns {
+	height: 300px;
+
+	.sub-menu-banners .title{
+		color: #0092db;
+	}
+
+	.nav-container-title {
+		margin-top: 200px;
+	}
+}
+
+//  ===== 3.2.4 Flyover =====
+
+.dropdown-menus .flyover {
+	height: 300px;
+	margin-bottom: 0;
+
+	.nav-container-title {
+		margin-top: 200px;
+	}
+
+}
+
+
+//  ===== 3.2 Mobile - Media Query =====
+
+.mobile-desc {
+	display: none;
+}
+
+.mobile-menu-container {
+  display: none;
+	justify-content: center;
+}
+
+.mobile-menu {
+	width: 80%;
+	height: 100%;
+	overflow-y: auto;
+	background-color: #f6f6f6;
+	padding-bottom: 60px;
+
+	ul {
+		// Dropdown Icon
+		.has-dropdown {
+
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 1px;
+				background-color: rgba(65, 65, 65, 0.8);
+				top: calc(50% - -5px/2);
+				right: 20px;
+				pointer-events: none;
+			}
+
+			&:after {
+				transform: rotate(45deg);
+				transform-origin: 100%;
+			}
+			
+			&:before {
+				transform: rotate(135deg);
+				transform-origin: 100%;
 			}
 		}
 	}
 }
 
-.nav-container {
-	margin-bottom: 10px;
-	min-height: 100px;
-	p {
-		font-size: 12px;
+.mobile-menu-link {
+	background-color: #fff;
+	border-bottom: solid 1px #f6f6f6;
+	padding-left: 10px;
+	position: relative;
+
+	a {
+		display: block;
+		cursor: pointer;
+		height: 40px;
+		line-height: 40px;
+
+		&:hover {
+			color: #0092db;
+		}
 	}
 }
+
+.mobile-menu-title {
+	color: #222;
+	font-weight: bold;
+	line-height: 50px;
+	padding-left: 10px;
+}
+
+.mobile-sams-sites {
+	margin-top: 40px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+	.main-navigation-bar, .large-dropdown, .uneven-columns, .flyover {
+		display: none;
+	}
+
+	.mobile-menu-container {
+		display: flex;
+	}
+
+	// Hide the description 
+	.desktop-desc {
+		display: none;
+	}
+
+	// Show the description for Mobile 
+	.mobile-desc {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+// ===== 3.3 Pagination =====
+
+// Making the description align center
+.pagination {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.pagination-container {
+	margin-bottom: 60px;
+	width: 50%;
+
+	a {
+		cursor: pointer;
+	}
+}
+
+.pagination-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-arrow {
+	width: 32px;
+	height: 32px;
+	padding: 6px;
+	color: #424242;
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	position: relative;
+}
+
+.page-previous, .page-next {
+
+	&:after, &:before {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 1px;
+		top: 50%;
+		left: calc(50% - 10px/2);
+		background-color: rgba(65, 65, 65, 0.8);
+	}
+	&:after {
+		transform: rotate(45deg);
+		transform-origin: 100%;
+	}
+	&:before {
+		transform: rotate(-45deg);
+		transform-origin: 100%;
+	}
+}
+
+.page-previous {
+	transform: rotate(180deg);
+}
+
+.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.page-num {
+	padding: 0% 5px;
+	line-height: 1.7;
+
+	a {
+		color: #898989;
+		font-size: .9rem;
+    font-weight: bold;
+    color: #1977d3;
+    width: 15px;
+    height: 20px;
+    text-align: center;
+	}
+
+	&.current-page {
+
+		a {
+			color: #424242;
+			border-bottom: 2px solid #1977d3;
+		}
+	}
+}
+
+.page-hover {
+	a {
+		border-bottom: 2px solid #e1e1e1;
+	}
+}
+
+
+@media (max-width: #{$smaller-desktop}) {
+
+	.pagination-container {
+		width: 80%;
+		margin-top: 60px;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+
 .refresh {
 	background-color: $gray;
 	width: 100%;
@@ -347,6 +889,7 @@
 	}
 }
 
+
 .tabs {
 	ul {
 		list-style: none;
@@ -417,6 +960,7 @@
 		margin-left: 10%;
 	}
 }
+
 
 .marketing-buttons {
 	.button .button--title {
@@ -960,4 +1504,18 @@
 	.product-thumbs span:last-child {
 		right: 115px;
 	}
+}
+
+@media (max-width: #{$med-sm-desktop}) {
+
+	#section-buttons {
+
+		.row{
+			padding: 0;
+		}
+
+		.dropdown {
+			padding-top: 20px;
+		}
+	}	
 }

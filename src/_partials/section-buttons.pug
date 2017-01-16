@@ -105,92 +105,416 @@
                         .button__desc Border: #D9ECCC
 
         hr
-        // =====Sections--btn-example =====
-        section.button-content.nav-bar
-          h3 Navigation Bar
-          .grid-25.grid-sm-100.button-description
-            p This illustrates the main navigation menu’s appearance when the user hovers over a menu item.
-          .grid-70.grid-sm-100.button-container
-            .nav-container
-              nav
-                ul.full-nav
+
+        // ===== 3.2 Sections--Dropdown Menu =====
+        section.button-content.dropdown-menus
+          h3 Dropdown Menus
+          .grid-25.grid-sm-100.dropdown-menus-desc
+            p.desktop-desc This illustrates the menu appearance when the user hovers over a menu item without subpages, and another two with varying sizes of dropdown lists.
+            p.mobile-desc This illustrates the mobile menu appearance.
+
+          .grid-70.grid-sm-100.mobile-menu-container
+            .mobile-menu
+              ul.menubar
+                li.mobile-menu-link.has-dropdown
+                  a 
+                    b Shop All
+                li.mobile-menu-link
+                  a Business Cards
+                li.mobile-menu-link
+                  a Signs
+                li.mobile-menu-link
+                  a Banners
+                li.mobile-menu-link
+                  a Business Stationery
+                li.mobile-menu-link
+                  a Marketing Materials
+
+              ul.mobile-account
+                li.mobile-menu-title Your account
+                li.mobile-menu-link
+                  a Order Status
+                li.mobile-menu-link
+                  a Sign In
+                li.mobile-menu-link
+                  a Register
+
+              ul.mobile-sams-sites
+                li.mobile-menu-link.has-dropdown
+                  a Sam's Club Sites
+
+
+          .grid-100
+            //- 3.2.1 Main Navigation Bar
+            .nav-container.row.main-navigation-bar
+              .row.external-links
+                .grid-20
+                  a Back To SamsClub.com
+                .grid-80
+                  a Photo
+                  a Stationery
+              .row.logo
+                a
+                  img(src='img/samus/sam-logo-desktop.png', alt='')
+
+              nav.nav-main
+                ul.nav-links
+                  li.shop-all 
+                    a Shop All
                   li 
-                    img.logo(src='img/costco/costco-logo.png', alt='')
-                  li My Photos
-                  li My Projects
-                  li Photo Books
-                  li Canvas Prints
-                  li Metal Prints
-                  li Greeting Cards
-                  li Wall Decor
-                  li Photo Gifts
-                  li
-                    button Upload Photos
-                  li
-                    div.cart
-              p Navigation Bar
-            .nav-container
-              nav
-                ul
-                  li My Photos
-                  li My Projects
-                  li Photo Books
-                  li Canvas Prints
-                  li Metal Prints
-                  li.menu-active Greeting Cards
-                  li Wall Decor
-                  li Photo Gifts
-              p Active Hover State
-            .nav-container
-              nav
-                ul
-                  li My Photos
-                  li My Projects
-                  li Photo Books
-                  li Canvas Prints
-                  li Metal Prints
-                  li Greeting Cards
-                  li.menu-active Wall Decor
-                    ul.sub-menu
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
-                  li Photo Gifts
-              p Small Dropdown
-            .nav-container
-              nav
-                ul
-                  li My Photos
-                  li My Projects
-                  li Photo Books
-                  li Canvas Prints
-                  li Metal Prints
-                  li Greeting Cards
-                  li Wall Decor
-                  li.menu-active Photo Gifts
-                    ul.sub-menu.large-dropdown
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
+                    a Business Cards
+                  li 
+                    a Signs
+                  li 
+                    a Banners
+                  //- Hidden when screen width below 1280px
+                  //- li 
+                  //-   a Business Stationery
+                
+                .nav-search
+                  form.search-box
+                    input(type="text" placeholder="Search Products").text-search-input
+                    button.search-btn
 
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
+                .nav-user
+                  .grid-50
+                    a.account
+                      p Your account
+                      p.sign-in Sign In
 
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
-                      li Art &amp; Image Gallery
-                      li Disney Image Gallery
-                      li Sports Gallery
-              p Large Dropdown
+                  .grid-50
+                    a.order
+                      p Your Order
+                      span.cart-icon
+                       span.cart-icon-count-container
+                        span.cart-icon-count 0
+              .nav-container-title Main Navigation Bar
+            
+            //- 3.2.2 Large Dropdown
+            .nav-container.row.large-dropdown
+              nav.nav-main
+                ul.nav-links
+                  li.shop-all 
+                    a Shop All
+                    .flyout-wrapper
+                      .row.dropdown
+                        .grid-16.sub-menu
+                          ul 
+                            li.title Business Cards
+                            li By Industry:
+                            li 
+                              a Professional Services
+                            li 
+                              a Manufacturing &amp; Trade
+                            li 
+                              a Associations &amp; Organizations
+                            li 
+                              a Retail &amp; Food
+                            li 
+                              a Health &amp; Wellness
+                            li 
+                              a Arts, Entertainment &amp; Design
+                            li 
+                              a Education &amp; Child Care
+                            li 
+                              a Residential &amp; Commercial Services
+                            li 
+                              a View All Industries
+
+                        .grid-16.sub-menu
+                          ul.no-title
+                            li By Type:
+                            li 
+                              a Standard Business Cards
+                            li 
+                              a Ultra Thick Business Cards
+                            li 
+                              a Premium Suede Business Cards
+                            li 
+                              a View All Business Cards
+
+                        .grid-16.sub-menu
+                          ul
+                            li.title Signs
+                            li 
+                              a Yard Signs
+                            li 
+                              a Metal Signs
+                            li 
+                              a Acrylic Signs
+                            li 
+                              a Window Clings
+                            li 
+                              a Magnetic Signs
+                            li 
+                              a View All Signs                              
+
+                        .grid-16.sub-menu
+                          ul
+                            li.title Banners
+                            li 
+                              a Outdoor Banners
+                            li 
+                              a Mesh Banners
+                            li 
+                              a View All Banners
+
+                        .grid-16.sub-menu
+                          ul
+                            li.title Business Stationery
+                            li 
+                              a Letterhead
+                            li 
+                              a Notepads
+                            li 
+                              a Presentation Folders
+                            li 
+                              a Envelopers
+                            li 
+                              a View All Stationery
+
+                        .grid-16.sub-menu
+                          ul
+                            li.title Marketing Materials
+                            li 
+                              a Postcards
+                            li 
+                              a Brochures
+                            li 
+                              a Flyers
+                            li 
+                              a Rack Cards
+                            li 
+                              a Advertising Labels
+                            li 
+                              a Magnets
+                            li 
+                              a View All Marketing Materails
+
+                  li 
+                    a Business Cards
+                  li 
+                    a Signs
+                  li 
+                    a Banners
+                  //- Hidden when screen width below 1280px
+                  //- li 
+                  //-   a Business Stationery
+                
+                .nav-search
+                  form.search-box
+                    input(type="text" placeholder="Search Products").text-search-input
+                    button.search-btn
+
+                .nav-user
+                  .grid-50
+                    a.account
+                      p Your account
+                      p.sign-in Sign In
+
+                  .grid-50
+                    a.order
+                      p Your Order
+                      span.cart-icon
+                       span.cart-icon-count-container
+                        span.cart-icon-count 0
+              .nav-container-title Large Dropdown
+
+            //- 3.2.3 Dropdown with uneven columns
+            .nav-container.row.uneven-columns
+              nav.nav-main
+                ul.nav-links
+                  li.shop-all 
+                    a Shop All                
+                  li 
+                    a Business Cards
+                  li 
+                    a Signs
+                  li 
+                    a Banners
+                      .flyout-wrapper
+                        .row.dropdown
+                          .grid-50.sub-menu
+                            ul 
+                              li 
+                                a Outdoor Banners
+                              li 
+                                a Mesh Banners
+                          .grid-50.sub-menu
+                            ul 
+                              li 
+                                a Create Your Own
+                              li 
+                                a Unload Your Own
+                              li 
+                                a View All Banners
+
+                  //- Hidden when screen width below 1280px
+                  //- li 
+                  //-   a Business Stationery
+                
+                .nav-search
+                  form.search-box
+                    input(type="text" placeholder="Search Products").text-search-input
+                    button.search-btn
+
+                .nav-user
+                  .grid-50
+                    a.account
+                      p Your account
+                      p.sign-in Sign In
+
+                  .grid-50
+                    a.order
+                      p Your Order
+                      span.cart-icon
+                       span.cart-icon-count-container
+                        span.cart-icon-count 0
+              .nav-container-title Dropdown with uneven columns
+
+            //- 3.2.4 Flyover
+            .nav-container.row.flyover
+              nav.nav-main
+                ul.nav-links
+                  li.shop-all 
+                    a Shop All                
+                  li 
+                    a Business Cards
+                  li 
+                    a Signs
+                  li 
+                    a Banners
+
+                  //- Hidden when screen width below 1280px
+                  //- li 
+                  //-   a Business Stationery
+                
+                .nav-search
+                  form.search-box
+                    input(type="text" placeholder="Search Products").text-search-input
+                    button.search-btn
+
+                .nav-user
+                  .grid-50
+                    a.account
+                      p Your account
+                      p.sign-in Sign In
+                    .flyout-wrapper
+                      .row.dropdown
+                        .grid-100.sub-menu
+                          ul
+                            li
+                              a Order Status
+                            li
+                              a Sign In
+                            li
+                              a Register
+                            li
+                              a Help
+
+                  .grid-50
+                    a.order
+                      p Your Order
+                      span.cart-icon
+                       span.cart-icon-count-container
+                        span.cart-icon-count 0
+              .nav-container-title Flyover
+
+        // ===== /Sections--Dropdown Menu =====
         hr
+
+        // ===== 3.3 Section - Pagination =====
+        section.button-content.pagination
+              
+              .grid-25.grid-sm-100
+                h3 Pagination
+                p This element is used in the product page to navigate through the preview images of a product.
+
+              .grid-70.grid-sm-100
+                //- 3.3.1
+                .row.pagination-container
+                  .pagination-links
+                    a.page-arrow.page-previous.hidden
+                    .page-num.current-page
+                      a 1
+                    .page-num
+                      a 2
+                    .page-num
+                      a 3
+                    .page-num
+                      a 4
+                    .page-num
+                      a 5
+                    .page-num
+                      a ...
+                    .page-num
+                      a 17
+                    a.page-arrow.page-next
+                  p.pagination-desc First Page Selected
+                //- 3.3.2
+                .row.pagination-container
+                  .pagination-links
+                    a.page-arrow.page-previous
+                    .page-num
+                      a 1
+                    .page-num
+                      a 2
+                    .page-num.current-page
+                      a 3
+                    .page-num
+                      a 4
+                    .page-num
+                      a 5
+                    .page-num
+                      a ...
+                    .page-num
+                      a 17
+                    a.page-arrow.page-next
+                  p.pagination-desc Page Selected in the Middle
+                //- 3.3.3
+                .row.pagination-container
+                  .pagination-links
+                    a.page-arrow.page-previous
+                    .page-num
+                      a 1
+                    .page-num
+                      a ...
+                    .page-num
+                      a 13
+                    .page-num
+                      a 14
+                    .page-num
+                      a 15
+                    .page-num
+                      a 16
+                    .page-num.current-page
+                      a 17
+                    a.page-arrow.page-next.hidden
+                  p.pagination-desc Last Page Selected
+                //- 3.3.4
+                .row.pagination-container
+                  .pagination-links
+                    a.page-arrow.page-previous
+                    .page-num
+                      a 1
+                    .page-num.current-page
+                      a 2
+                    .page-num
+                      a 3
+                    .page-num
+                      a 4
+                    .page-num.page-hover
+                      a 5
+                    .page-num
+                      a ...
+                    .page-num
+                      a 17
+                    a.page-arrow.page-next
+                  p.pagination-desc Page on Hover
+
+        // ===== /3.3 Section - Pagination =====
+        hr
+
         //- section.button-content.nav-bar#controls-refresh
         //-   h3 Navigation Bar Refresh
         //-   .grid-25.grid-sm-100.button-description

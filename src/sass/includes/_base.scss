@@ -49,6 +49,7 @@ a {
   font-weight: 300;
   line-height: 1.3em;
   color: inherit;
+  text-decoration: none;
 }
 
 p {
@@ -62,6 +63,11 @@ hr {
   border: 1px solid #f2f2f2;
 }
 
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 /* ------ Normalize ----- */
 
