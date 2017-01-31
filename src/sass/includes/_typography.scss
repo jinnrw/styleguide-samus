@@ -417,6 +417,13 @@
 	    }
 
     }
+    ul{
+	    -webkit-padding-start: 40px;
+    }
+    ul, li{
+	    margin: 0;
+		list-style: disc;
+    }
 }
 
 @media (max-width: #{$med-sm-desktop}) {
