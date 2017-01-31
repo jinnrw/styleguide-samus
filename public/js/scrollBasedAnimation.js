@@ -173,3 +173,12 @@ var scene = new ScrollMagic.Scene({
         //.addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
         .addTo(controller);
 
+var typographyS1 = TweenMax.from("#typographeadings", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: "#typographeadings",
+          offset: -200,
+        })
+        .setTween(typographyS1)
+        //.addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
+        .addTo(controller);

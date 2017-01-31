@@ -4,6 +4,7 @@ html {
  
 body {
   background-size:273px; 
+  background-color: #fdfdfd;
   height: 100%;
   min-height: 100%;
   margin: 0;
@@ -74,7 +75,7 @@ body {
   h2 {
     color: #333;
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     height: auto;
     text-align: center;
@@ -111,21 +112,26 @@ body {
 
   #logo:hover {
     background: $blue;
-      font-size: 26px;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
   }
 
   #colour:hover {
     background: $green;
-      font-size: 26px;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
   }
 
   #buttons:hover {
     background: $orange;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
   }
 
   #typography:hover {
     background: $gray;
     font-size: 26px;
+    transition: all .8s ease-in-out;
     h2 {
       color: $blue;
     }
@@ -133,7 +139,8 @@ body {
 
   #iconography:hover {
     background: $blue-gray;
-      font-size: 26px;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
       h2 {
         color: $green;
       }
@@ -141,6 +148,8 @@ body {
 
   #imagery:hover {
     background: $gray;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
     h2 {
       color: $red;
     }
@@ -148,6 +157,8 @@ body {
 
   #layout:hover {
     background: $black;
+    font-size: 26px;
+    transition: all .8s ease-in-out;
   }
 
 
