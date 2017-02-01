@@ -55,7 +55,7 @@ body {
   -webkit-transition: opacity 0.2s linear 0.5s;
   -moz-transition: opacity 0.2s linear 0.5s;
   transition: opacity 0.2s linear 0.5s;
-  z-index: 21;
+  z-index: 23;
 }
 
 .menu {
@@ -261,10 +261,11 @@ body {
 .main {
   min-height: 100vh;
   width: 93%;
-  background: #fff;
+  background-color: #fdfdfd;
   display: none;
   transition: all .5s;
   margin-left: 115px;
+  z-index: 22;
   h1 {
     text-align: center;
   }
@@ -397,13 +398,12 @@ body {
 }
 .loader {
     position: absolute;
-    width: 304px;
+    width: 500px;
     margin: auto;
-    padding: 12px 0 0 18px;
 }
 .close {
-    transform: translateX(-100%);
-    transition: all 0.01s;
+    transform: translateX(100%);
+    transition: all 1.3s;
     animation-name: blind;
 }
 @keyframes blind{
@@ -416,81 +416,56 @@ body {
         opacity: 0;
     }
 }
-.st0{fill:none;stroke:#fff;stroke-opacity:0;stroke-miterlimit:10;}
-.IvyBXqMQ_0{stroke-dasharray:415 417;stroke-dashoffset:416;}
-.start .IvyBXqMQ_0{animation:IvyBXqMQ_draw_0 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_1{stroke-dasharray:359 361;stroke-dashoffset:360;}
-.start .IvyBXqMQ_1{animation:IvyBXqMQ_draw_1 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_2{stroke-dasharray:320 322;stroke-dashoffset:321;}
-.start .IvyBXqMQ_2{animation:IvyBXqMQ_draw_2 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_3{stroke-dasharray:413 415;stroke-dashoffset:414;}
-.start .IvyBXqMQ_3{animation:IvyBXqMQ_draw_3 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_4{stroke-dasharray:415 417;stroke-dashoffset:416;}
-.start .IvyBXqMQ_4{animation:IvyBXqMQ_draw_4 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_5{stroke-dasharray:442 444;stroke-dashoffset:443;}
-.start .IvyBXqMQ_5{animation:IvyBXqMQ_draw_5 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_6{stroke-dasharray:168 170;stroke-dashoffset:169;}
-.start .IvyBXqMQ_6{animation:IvyBXqMQ_draw_6 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_7{stroke-dasharray:130 132;stroke-dashoffset:131;}
-.start .IvyBXqMQ_7{animation:IvyBXqMQ_draw_7 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_8{stroke-dasharray:168 170;stroke-dashoffset:169;}
-.start .IvyBXqMQ_8{animation:IvyBXqMQ_draw_8 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_9{stroke-dasharray:191 193;stroke-dashoffset:192;}
-.start .IvyBXqMQ_9{animation:IvyBXqMQ_draw_9 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_10{stroke-dasharray:148 150;stroke-dashoffset:149;}
-.start .IvyBXqMQ_10{animation:IvyBXqMQ_draw_10 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_11{stroke-dasharray:288 290;stroke-dashoffset:289;}
-.start .IvyBXqMQ_11{animation:IvyBXqMQ_draw_11 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_12{stroke-dasharray:292 294;stroke-dashoffset:293;}
-.start .IvyBXqMQ_12{animation:IvyBXqMQ_draw_12 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_13{stroke-dasharray:298 300;stroke-dashoffset:299;}
-.start .IvyBXqMQ_13{animation:IvyBXqMQ_draw_13 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_14{stroke-dasharray:55 57;stroke-dashoffset:56;}
-.start .IvyBXqMQ_14{animation:IvyBXqMQ_draw_14 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_15{stroke-dasharray:95 97;stroke-dashoffset:96;}
-.start .IvyBXqMQ_15{animation:IvyBXqMQ_draw_15 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_16{stroke-dasharray:177 179;stroke-dashoffset:178;}
-.start .IvyBXqMQ_16{animation:IvyBXqMQ_draw_16 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_17{stroke-dasharray:166 168;stroke-dashoffset:167;}
-.start .IvyBXqMQ_17{animation:IvyBXqMQ_draw_17 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_18{stroke-dasharray:130 132;stroke-dashoffset:131;}
-.start .IvyBXqMQ_18{animation:IvyBXqMQ_draw_18 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_19{stroke-dasharray:207 209;stroke-dashoffset:208;}
-.start .IvyBXqMQ_19{animation:IvyBXqMQ_draw_19 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_20{stroke-dasharray:166 168;stroke-dashoffset:167;}
-.start .IvyBXqMQ_20{animation:IvyBXqMQ_draw_20 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
-.IvyBXqMQ_21{stroke-dasharray:146 148;stroke-dashoffset:147;}
-.start .IvyBXqMQ_21{animation:IvyBXqMQ_draw_21 7200ms ease-in-out 0ms forwards,IvyBXqMQ_fade 7200ms linear 0ms;}
+.svg{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content:center;
+  z-index: 21;
+  position: absolute;
+  margin-top: -50px;
+}
+.st0{fill:none;stroke:#ccc;stroke-opacity:0;stroke-miterlimit:10;}
+.TVTSOigT_0{stroke-dasharray:409 411;stroke-dashoffset:410;animation:TVTSOigT_draw_0 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_1{stroke-dasharray:409 411;stroke-dashoffset:410;animation:TVTSOigT_draw_1 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_2{stroke-dasharray:317 319;stroke-dashoffset:318;animation:TVTSOigT_draw_2 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_3{stroke-dasharray:394 396;stroke-dashoffset:395;animation:TVTSOigT_draw_3 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_4{stroke-dasharray:309 311;stroke-dashoffset:310;animation:TVTSOigT_draw_4 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_5{stroke-dasharray:496 498;stroke-dashoffset:497;animation:TVTSOigT_draw_5 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_6{stroke-dasharray:38 40;stroke-dashoffset:39;animation:TVTSOigT_draw_6 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_7{stroke-dasharray:254 256;stroke-dashoffset:255;animation:TVTSOigT_draw_7 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_8{stroke-dasharray:382 384;stroke-dashoffset:383;animation:TVTSOigT_draw_8 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_9{stroke-dasharray:213 215;stroke-dashoffset:214;animation:TVTSOigT_draw_9 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_10{stroke-dasharray:305 307;stroke-dashoffset:306;animation:TVTSOigT_draw_10 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_11{stroke-dasharray:352 354;stroke-dashoffset:353;animation:TVTSOigT_draw_11 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_12{stroke-dasharray:76 78;stroke-dashoffset:77;animation:TVTSOigT_draw_12 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_13{stroke-dasharray:214 216;stroke-dashoffset:215;animation:TVTSOigT_draw_13 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_14{stroke-dasharray:222 224;stroke-dashoffset:223;animation:TVTSOigT_draw_14 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_15{stroke-dasharray:184 186;stroke-dashoffset:185;animation:TVTSOigT_draw_15 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_16{stroke-dasharray:148 150;stroke-dashoffset:149;animation:TVTSOigT_draw_16 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
+.TVTSOigT_17{stroke-dasharray:184 186;stroke-dashoffset:185;animation:TVTSOigT_draw_17 9200ms ease-out 0ms forwards, TVTSOigT_fade 9200ms linear 0ms;}
 
-@keyframes IvyBXqMQ_draw{100%{stroke-dashoffset:0;}}
-@keyframes IvyBXqMQ_fade{0%{stroke-opacity:1;stroke:#938989;}80%{stroke-opacity:1;}100%{stroke:#fff;stroke-opacity:0;}}
-
-@keyframes IvyBXqMQ_draw_5{11.11111111111111%{stroke-dashoffset: 443}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_4{11.11111111111111%{stroke-dashoffset: 416}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_3{11.11111111111111%{stroke-dashoffset: 414}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_1{11.11111111111111%{stroke-dashoffset: 360}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_0{11.11111111111111%{stroke-dashoffset: 416}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_2{11.11111111111111%{stroke-dashoffset: 321}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-
-@keyframes IvyBXqMQ_draw_15{11.11111111111111%{stroke-dashoffset: 96}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #e0393e;}}
-@keyframes IvyBXqMQ_draw_14{11.11111111111111%{stroke-dashoffset: 56}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #fff;}}
-
-@keyframes IvyBXqMQ_draw_10{11.11111111111111%{stroke-dashoffset: 149}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_9{11.11111111111111%{stroke-dashoffset: 192}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_8{11.11111111111111%{stroke-dashoffset: 169}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_7{11.11111111111111%{stroke-dashoffset: 131}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_6{11.11111111111111%{stroke-dashoffset: 169}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-
-@keyframes IvyBXqMQ_draw_13{11.11111111111111%{stroke-dashoffset: 299}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_12{11.11111111111111%{stroke-dashoffset: 293}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_11{11.11111111111111%{stroke-dashoffset: 289}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-
-@keyframes IvyBXqMQ_draw_16{11.11111111111111%{stroke-dashoffset: 178}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_21{11.11111111111111%{stroke-dashoffset: 147}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0; fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_20{11.11111111111111%{stroke-dashoffset: 167}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_19{11.11111111111111%{stroke-dashoffset: 208}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_18{11.11111111111111%{stroke-dashoffset: 131}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
-@keyframes IvyBXqMQ_draw_17{11.11111111111111%{stroke-dashoffset: 167}52.77777777777778%{ stroke-dashoffset: 0; fill: #fff;}100%{ stroke-dashoffset: 0;fill: #0060a9;}}
+@keyframes TVTSOigT_draw{100%{stroke-dashoffset:0;}}
+@keyframes TVTSOigT_fade{0%{stroke-opacity:1;}45%{stroke-opacity:1;}50%{stroke-opacity:0;}100%{stroke-opacity:0;}}
+@keyframes TVTSOigT_draw_0{8.695652173913043%{stroke-dashoffset: 410}44.927536231884055%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_1{9.761295822676896%{stroke-dashoffset: 410}45.99317988064791%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #589026;}}
+@keyframes TVTSOigT_draw_2{10.82693947144075%{stroke-dashoffset: 318}47.05882352941176%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #005DA0;}}
+@keyframes TVTSOigT_draw_3{11.892583120204602%{stroke-dashoffset: 395}48.124467178175614%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_4{12.958226768968458%{stroke-dashoffset: 310}49.19011082693947%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_5{14.023870417732311%{stroke-dashoffset: 497}50.25575447570332%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_6{15.089514066496163%{stroke-dashoffset: 39}51.32139812446718%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_7{16.155157715260017%{stroke-dashoffset: 255}52.38704177323103%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_8{17.22080136402387%{stroke-dashoffset: 383}53.452685421994886%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_9{18.286445012787723%{stroke-dashoffset: 214}54.51832907075874%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_10{19.352088661551576%{stroke-dashoffset: 306}55.58397271952259%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_11{20.417732310315433%{stroke-dashoffset: 353}56.649616368286445%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_12{21.483375959079286%{stroke-dashoffset: 77}57.7152600170503%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill: #043B7A;}}
+@keyframes TVTSOigT_draw_13{22.54901960784314%{stroke-dashoffset: 215}58.78090366581416%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
+@keyframes TVTSOigT_draw_14{23.614663256606995%{stroke-dashoffset: 223}59.846547314578004%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
+@keyframes TVTSOigT_draw_15{24.68030690537085%{stroke-dashoffset: 185}60.912190963341864%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
+@keyframes TVTSOigT_draw_16{25.7459505541347%{stroke-dashoffset: 149}61.97783461210571%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
+@keyframes TVTSOigT_draw_17{26.811594202898554%{stroke-dashoffset: 185}63.04347826086957%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
 @media (max-width: #{$small-desktop}) {
   .loader {
     position: absolute;

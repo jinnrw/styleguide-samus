@@ -2,11 +2,11 @@ var transition= document.getElementById('blind');
         setTimeout(function() {
             transition.classList.add('close');
             document.body.style.overflowY= "visible";
-        }, .5);
+        }, 7000);
 
         setTimeout(function() {
         TweenMax.fromTo(".container", 1.5, {x: -115, display: "none", ease: Power2.easeInOut},{x: 0, display: "flex", ease: Power2.easeInOut});
-        }, .5);
+        }, 6500);
 
 // Product Thumbs
 $('.product-thumbs .next').click(function() {
