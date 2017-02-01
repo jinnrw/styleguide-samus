@@ -17,7 +17,45 @@ var scene = new ScrollMagic.Scene({
         // .addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
         .addTo(controller);
 
+// ===== Controls Section ScrollMagic =====
 
+var controls_1_Show = TweenMax.from(".dropdown-menus", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    controls_2_Show = TweenMax.from(".pagination", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    controls_3_Show = TweenMax.from(".tabs", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
+    controls_4_Show = TweenMax.from(".marketing-buttons", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: ".dropdown-menus",
+          triggerHook: 'onEnter',
+          offset: -50,
+        })
+        .setTween(controls_1_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: ".pagination",
+          triggerHook: 'onEnter',
+          offset: -50,
+        })
+        .setTween(controls_2_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: ".tabs",
+          triggerHook: 'onEnter',
+          offset: -50,
+        })
+        .setTween(controls_3_Show)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+          triggerElement: ".marketing-buttons",
+          triggerHook: 'onEnter',
+          offset: -50,
+        })
+        .setTween(controls_4_Show)
+        .addTo(controller);
+        
 // ===== Layout Section ScrollMagic =====
 
 var layout_1_Show = TweenMax.from(".layout_mixing", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
