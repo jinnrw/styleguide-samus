@@ -2,6 +2,7 @@ var transition= document.getElementById('blind');
         setTimeout(function() {
             transition.classList.add('close');
             document.body.style.overflowY= "visible";
+            document.body.style.overflowX= "none";
         }, 7000);
 
         setTimeout(function() {

@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	$('.menu').click(function() {
 		$(this).toggleClass('active');
-    $('.styleguide-body').css('overflow', 'visible');
+    $('.styleguide-body').css('overflow-X', 'hidden');
 		$('.menu').not(this).toggleClass('non-active');
 		$('.fixed-menu').toggleClass('display');
 		$('.scrolldown').toggleClass('scrolldisplay');
