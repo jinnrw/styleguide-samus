@@ -32,16 +32,8 @@ var logo_1_Show = TweenMax.from("#logo_greetings", 0.5, {y: 100, opacity: 0, eas
     logo_2_Show = TweenMax.from("#logo_padding", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
 
 var scene = new ScrollMagic.Scene({
-          triggerElement: "#logo_greetings",
-          offset: -200,
-        })
-        .setTween(logo_1_Show)
-        // .addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
-        .addTo(controller);
-
-var scene = new ScrollMagic.Scene({
           triggerElement: "#logo_padding",
-          offset: -250,
+          offset: -300,
         })
         .setTween(logo_2_Show)
         // .addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
@@ -58,65 +50,39 @@ var layout_1_Show = TweenMax.from(".layout_mixing", 0.5, {y: 100, opacity: 0, ea
 
 var scene = new ScrollMagic.Scene({
           triggerElement: ".layout_mixing",
-          offset: -200,
+          offset: -350,
         })
         .setTween(layout_1_Show)
         .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
           triggerElement: ".layout_nesting",
-          offset: -200,
+          offset: -400,
         })
         .setTween(layout_2_Show)
         .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#layout_desktop",
-          offset: -200,
+          offset: -400,
         })
         .setTween(layout_3_Show)
         .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#layout_mobile",
-          offset: -200,
+          offset: -400,
         })
         .setTween(layout_4_Show)
         .addTo(controller);
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#layout_tablet",
-          offset: -200,
+          offset: -400,
         })
         .setTween(layout_5_Show)
         .addTo(controller);
 
-// ===== Imagery Section ScrollMagic =====
-
-var imagery_1_Show = TweenMax.from("#imagery-typograhpy", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
-    imagery_2_Show = TweenMax.from("#imagery-banner", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut}),
-    imagery_3_Show = TweenMax.from("#imagery-call-out", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
-
-var scene = new ScrollMagic.Scene({
-          triggerElement: "#imagery-typograhpy",
-          offset: -200,
-        })
-        .setTween(imagery_1_Show)
-        .addTo(controller);
-
-var scene = new ScrollMagic.Scene({
-          triggerElement: "#imagery-banner",
-          offset: -200,
-        })
-        .setTween(imagery_2_Show)
-        .addTo(controller);
-
-var scene = new ScrollMagic.Scene({
-          triggerElement: "#imagery-call-out",
-          offset: -200,
-        })
-        .setTween(imagery_3_Show)
-        .addTo(controller);
 
 // ===== Controls Section ScrollMagic =====
 
@@ -167,17 +133,17 @@ var typographyS1 = TweenMax.from("#typograpgymosaic", 0.5, {y: 100, opacity: 0, 
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#typograpgymosaic",
-          offset: -200,
+          offset: -300,
         })
         .setTween(typographyS1)
-        //.addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
+        // .addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)
         .addTo(controller);
 
 var typographyS1 = TweenMax.from("#typographeadings", 0.5, {y: 100, opacity: 0, ease: Power2.easeInOut})
 
 var scene = new ScrollMagic.Scene({
           triggerElement: "#typographeadings",
-          offset: -200,
+          offset: -300,
         })
         .setTween(typographyS1)
         //.addIndicators({name: "layout_1_Show"}) // add indicators (requires plugin)

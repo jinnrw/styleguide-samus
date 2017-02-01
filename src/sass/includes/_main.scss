@@ -32,7 +32,7 @@ body {
 
 .container {
   position: fixed;
-  min-width: 115px;
+  width: 115px;
   height: 100%;
   cursor: pointer;
   opacity: 1;
@@ -105,7 +105,7 @@ body {
       position: fixed;
       height: 200vh;
       width: 3px;
-      left: 112px;
+      left: calc(100% - 3px);
       opacity: .6;
       animation: selected-menu 1s;
     }
@@ -398,9 +398,7 @@ body {
     justify-content:center;
 }
 .loader {
-    position: absolute;
     width: 500px;
-    margin: auto;
 }
 .close {
     transform: translateX(100%);
@@ -469,9 +467,6 @@ body {
 @keyframes TVTSOigT_draw_17{26.811594202898554%{stroke-dashoffset: 185}63.04347826086957%{ stroke-dashoffset: 0;fill:#fff;}100%{ stroke-dashoffset: 0;fill:#0082CA;}}
 @media (max-width: #{$small-desktop}) {
   .loader {
-    position: absolute;
     width: 280px;
-    height: 200px;
-    margin: auto;
   }
 }
