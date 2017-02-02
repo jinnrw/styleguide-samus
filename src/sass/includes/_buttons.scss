@@ -252,6 +252,7 @@
     border: solid 1px rgba(65,65,65,.2);
     outline: none;
 		height: 40px;
+		cursor: pointer;
 	}
 
 	.text-search-input {
@@ -280,6 +281,7 @@
     background-color: #bdbdbd;
     border-radius: 50%;
 		border: none;
+		pointer-events: none;
 	}
 }
 
