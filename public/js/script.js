@@ -6,7 +6,9 @@ var transition= document.getElementById('blind');
         }, 7000);
 
         setTimeout(function() {
-        TweenMax.fromTo(".container", 1.5, {x: -115, display: "none", ease: Power2.easeInOut},{x: 0, display: "flex", ease: Power2.easeInOut});
+           TweenMax.to("#blind", 1.3, {display: "none"});
+
+           TweenMax.fromTo(".container", 1.5, {x: -115, display: "none", ease: Power2.easeInOut},{x: 0, display: "flex", ease: Power2.easeInOut});
         }, 6500);
 
 // Product Thumbs
